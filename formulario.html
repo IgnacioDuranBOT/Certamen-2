@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+    <!--LINKS GOOGLE-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+   
+    <!--LINKS EXTERNOS-->
+    <link rel="stylesheet" href="css/estilosFormulario.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <header> 
+         
+    </header>
+    <div class="container-fluid">
+        <form id="form1" name="form1" class="row g-3 needs-validation" method="POST" novalidate>
+
+
+        
+        
+                    <div id="Formulario">
+
+                        <span class="material-icons person">person</span>
+
+                        <h1>Información</h1>
+
+                        <h5>Últimos signos vitales</h5>
+                            <ul>
+                                <li>  
+                                    <label>Nombre completo</label>
+                                    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="ingrese su nombre"  required> <span id="spanNombre" class="hidden"> Ingrese un nombre</span>
+                    
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <label>Edad</label>
+                                    <input type="tel" name="Edad" id="Edad" class="form-control" maxlength="3"  required><span id="spanEdad" class="hidden"> ingrese una edad</span>
+                                </li>    
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="form-row align-items-center">
+                                        <div class="col-auto my-1">
+                                        <label class="mr-sm-2" for="inlineFormCustomSelect">Genero</label>
+                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                <option selected>Sin definir</option>
+                                                <option value="1">Hombre</option>
+                                                <option value="2">Mujer</option>
+                                                <option value="3">Otro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <label for="fechaNacimiento"> Fecha de nacimiento </label>
+                                    <input type="date" id="fechaNacimiento" required>
+                                </li>
+                            </ul>  
+                            <ul>
+                                <li>
+                                    <div class="form-group">
+                                    <label for="Email">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Ingrese su Email" required><span id="spanEmail" class="hidden"> Ingrese un correo </span>
+                                    </div>  
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <label>Numero telefónico</label>
+                                    <input type="tel" name="telefono" id="number" class="form-control" minlength="9" maxlength="9" placeholder="ingrese su numero telefónico" required><span id="spannumber" class="hidden">Ingrese un numero telefónico</span>
+                                </li>    
+                            </ul>
+                            <ul>
+                                <li>          
+                                    <label>RUT</label>
+                                    <input type="text" name="rut" id="rut" class="form-control" placeholder="ingrese su rut"  required><span id="spanRut" class="hidden">ingrese un rut</span>
+                                </li>    
+                            <ul>
+                                <li>
+                                    <label> Región - ciudad</label>
+                                    <select name="cosa" onchange="cambia()" id="SelecCiudad" required>
+                                        <option value="0">Seleccione
+                                        <option value="1">Región metropolitana
+                                        <option value="2">Región de Valparaíso       
+                                    </select>
+
+                                    <select name="opt">
+                                        <option value="-">-
+                                    </select>
+                                </li>
+                            </ul>
+                            
+                            <div class="form-group">
+
+                                <label class="col-md-4 control-label" for="submit"></label>
+                                <div class="col-md-8">
+        
+                                <button id="boton" type="submit" value="subir">actualizar</button>
+                                </div>
+                            </div>
+                            
+                            <h2 id="antecedentesTexto">Datos antecedentes clínicos</h2>
+                            <div id="antecedentesClinicos">
+                                <ul>
+                                    <li>
+                                        <label for="exampleFormControlTextarea1"></label>
+                                        <textarea class="form-control" id="opinionTexto" rows="2" maxlength="100" placeholder="motivo hospitalización"></textarea>
+                                    </li>
+                                    <li>
+                                        <label for="fechaNacimiento"> </label>
+                                        <input type="date" id="fechaNacimiento2">
+                                    </li>
+                                    <button>crear</button>
+                                    
+                                </ul>  
+                            </div>
+
+                        <div id="UltimoSignosVitales">
+                            <ul>
+                                <li>
+                                    <label><span class="material-icons arrow">arrow_back_ios</span> Estatura</label>
+                                    <input type="text" name="Estatura" id="Estatura" class="form-control" maxlength="3"  required><span id="spanEstatura" class="hidden">mala la wea</span>
+                                </li>
+                                <li>
+                                    <label><span class="material-icons arrow">arrow_back_ios</span>Peso</label>
+                                    <input type="text" name="Peso" id="Peso" class="form-control" maxlength="3"  required><span id="spanPeso" class="hidden">mal</span>
+                                </li>
+                                <li>
+                                    <label><span class="material-icons arrow">arrow_back_ios</span>Frecuencia Cardiaca</label>
+                                    <input type="text" name="FCardio" id="FCardio" class="form-control" maxlength="3"  required><span id="spanFCardio" class="hidden">mal</span>
+                                </li>  
+                            </ul>
+                        </div>     
+                    </div>  
+                 
+        </form>
+    </div>
+
+    
+    <script data-main="js/funciones" src="js/require-jquery.js"></script>
+    <script>var exports = {};</script>
+    <script src="js/Funciones.js" async> </script>
+</body>
+    
+</html>

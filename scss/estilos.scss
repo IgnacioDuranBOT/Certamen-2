@@ -1,0 +1,101 @@
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+    
+  }
+
+.person { 
+    font-size: 10rem;
+    border: 1px solid black;
+    transform: translate(20%,20%);
+}
+
+.add{
+    font-size: 2rem;
+    transform: translate(30%,30%);
+}
+
+.arrow{
+    font-size: 2rem;
+}
+
+h1{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header a{
+    transform: translate(11%,-50%);
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 18px;
+
+}
+
+article h2{
+    font-weight: 500px;
+    font-size: 20px;
+    color: rgb(100, 98, 98);
+    font-family: 'Roboto', sans-serif;
+    transform: translate(2%,150%);   
+} 
+
+#signosVitales{
+    border: 1px solid black;
+    width: 200px;
+    transform: translate(15%,50%);
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+article h3{
+    font-weight: 500px;
+    font-family: 'Roboto', sans-serif;
+    transform: translate(30%,250%);
+
+}
+
+article hr{
+    width: 300px;
+    color: black;
+   transform: translate(190%,4050%);
+}
+
+#InformacionUsuario{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-450%,-50%);
+    max-width: 50%;
+    text-align: left;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 130px;
+}
+
+.container{
+    transform: translate(-200%,95%);
+}
+
+
